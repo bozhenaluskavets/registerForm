@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.background {
+    
+    background: linear-gradient(#1b1c1d,#363738);
+    z-index: -10;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.content {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font: 400 34px 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+p {
+    font: 300 18px 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    margin: 0 0 5px 20px;
+}
+
+input {
+    padding: 15px 10px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    font: 400 18px 'Montserrat', sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: #363738;
+    box-shadow: rgba(60, 60, 74, 0.25) 0px 20px 40px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 5px 15px 0px;
+}
+
+#error {
+    color: rgb(254, 102, 102);
+    font: 300 20px 'Montserrat', sans-serif;
+    padding: 0 0 15px;
+    text-align: center;
+}
+
+.btn {
+    text-transform: uppercase;
+    font: 400 22px 'Montserrat', sans-serif;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 30px;
+}
+
+a {
+    font: 200 22px 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.678);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+#loading {
+    top: 48vh;
+    left: 50%;
+    position: fixed;
+}
+
+#loading-image {
+    position: absolute;
+    z-index: 100;
+    width: 70px;
+    height: 70px;
+} 
+
+#userInfo {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.item {
+    font: 200 22px 'Montserrat', sans-serif;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    padding-bottom: 10px;
+}
