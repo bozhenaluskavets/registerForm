@@ -40,11 +40,11 @@ const loginHandler = () => {
     loginBtn.addEventListener('click', () => {
         const fields = getInputValue();
         
-        logAPI.loginUser(fields)
+        API.loginUser(fields)
         .then(async data => {
             const body = await data.json();
             if (data.ok) {
-                DB.setToken(body.jwt);
+                tokenService.setToken(body.jwt);
                 location.href = 'home.html';
             } else {
                 error.innerHTML = body.error.message;

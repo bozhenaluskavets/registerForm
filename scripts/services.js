@@ -6,10 +6,6 @@ const registerUser = (data) => {
     })
 }
 
-const API = {
-    registerUser
-}
-
 const loginUser = (data) => {
     return fetch('https://hosana-api.herokuapp.com/api/auth/local', {
         method: 'POST',
@@ -18,12 +14,8 @@ const loginUser = (data) => {
     })
 }
 
-const logAPI = {
-    loginUser
-}
-
 const checkToken = () => {
-    const token = DB.getToken();
+    const token = tokenService.getToken();
 
     return fetch('https://hosana-api.herokuapp.com/api/me', {
         method: 'GET',
@@ -31,6 +23,8 @@ const checkToken = () => {
     })
 }
 
-const userAPI = {
+const API = {
+    registerUser,
+    loginUser,
     checkToken
 }
